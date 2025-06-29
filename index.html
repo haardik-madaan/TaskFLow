@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do App</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="todo-app">
+      <h1>To-Do App</h1>
+
+
+      <div class="progress-wrapper">
+        <div class="progress-text">Let's smash our goals today! <p id = "user-name"></p>
+
+        </div>
+        <div class="progress-status">
+          <div class="progress-bar">
+            <div id="progress-fill"></div>
+          </div>
+          <div class="counter-bubble" id="counter-bubble">0 / 0</div>
+        </div>
+      </div>
+
+      
+      <form id="todo-form">
+        <input type="text" id="todo-input" placeholder="Add a new task..." required />
+        <button type="submit"><i class="fa-solid fa-plus"></i></button>
+      </form>
+
+
+      <div class="todos-container">
+        <ul id="task-list"></ul>
+        <img src="./images/emptylist.png" alt="Empty List" id="empty-list-image" />
+      </div>
+      
+    <div class="top-bar">
+    <button id="logout-btn" class="logout-btn">Logout</button>
+  </div>
+  
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

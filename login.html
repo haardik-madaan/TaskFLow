@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | To-Do App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="auth-form">
+      <h1>Welcome to Taskflow</h1>
+      <form id="login-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" required placeholder="Enter your name" />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" required />
+
+        <button type="submit">Enter</button>
+        <p id="error-msg"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="auth.js"></script>
+</body>
+</html>
